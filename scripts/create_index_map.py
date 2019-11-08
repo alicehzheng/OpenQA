@@ -1,7 +1,5 @@
 """
-	Input Format: 
-		json.dumps
-	Output Format:
+	Functionality: Take raw data as input and generate json dumps of entity-text mapping as well as entity-docid mapping
 """
 
 import argparse
