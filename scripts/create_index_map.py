@@ -36,7 +36,7 @@ def main():
 					"""
 					if entity not in entity_doc_map:
 						entity_doc_map[entity] = [doc_id]
-					else:
+					elif doc_id not in entity_doc_map[entity]:
 						entity_doc_map[entity].append(doc_id)
 	with open(args.entity2text_path, "w", encoding = "utf-8") as output_file:
 		json.dump(entity_text_map, output_file)
